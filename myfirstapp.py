@@ -1,5 +1,4 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
@@ -38,7 +37,7 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-target_names = np.array(['setosa', 'versicolor', 'virginica'])
+target_names = pd.Series(['setosa', 'versicolor', 'virginica'])
 
 st.subheader('Class labels and their corresponding index number')
 st.write(target_names)
