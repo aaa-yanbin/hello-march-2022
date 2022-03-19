@@ -27,6 +27,7 @@ st.subheader('User Input parameters')
 st.write(df)
 
 iris = pd.read_csv("https://raw.githubusercontent.com/aaa-yanbin/might-march-streamlit/main/Iris.csv")
+iris.Species = iris.Species.replace({'Iris-setosa': 0, 'Iris-versicolor': 1, 'Iris-virginica': 2})
 X = iris[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
 Y = iris['Species']
 
