@@ -26,7 +26,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-iris = pd.read_csv("https://raw.githubusercontent.com/aaa-yanbin/might-march-streamlit/main/Iris.csv)
+iris = pd.read_csv("https://raw.githubusercontent.com/aaa-yanbin/might-march-streamlit/main/Iris.csv")
 X = iris[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
 Y = iris['Species']
 
